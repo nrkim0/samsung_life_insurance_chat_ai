@@ -106,3 +106,57 @@ input:focus { border: 1px solid #3b82f6;outline: none;box-shadow: none;}
  .menu-item { gap:0 !important; margin: 0 auto !important; padding: 16px 16px !important; border-radius: 16px !important; } 
  #sidebar .user-info { display: none; } 
  }
+
+/* 모달  */
+ #modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+/* 팝업 */
+.modal {
+  width: 520px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+}
+/* 제목 */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* 내용 */
+.modal-desc {
+  font-size: 16px;
+  color: #333;
+  padding: 20px 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+/* 버튼 영역 */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn.cancel {
+  background: #6b7280;
+  color: #fff;
+}
+.btn.confirm {
+  background: #003BDA;
+  color: #fff;rgb(3, 105, 102)rgb(3, 15, 105)rgb(57, 74, 205)
+}
