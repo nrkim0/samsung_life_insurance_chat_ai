@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>삼성생명 chat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+  <div id="sidebar">
+    <h2>
+      <a href="index.html"><i class="icon-logo"></i></a>
+      <a href="index.html"><span class="logo-label"></span></a>
+    </h2>
+    <div class="search-box">
+      <input type="text" placeholder="Search.." />
+      <img class="icon-search" src="images/icon-search.png" alt="검색" />
+    </div>
+    <a href="index.html">
+      <div class="menu-item active">
+        <i class="icon-menu1"></i>
+        <span class="menu-label">AI Chat</span>
+      </div>
+    </a>
+    <div class="menu-item">
+        <i class="icon-menu2"></i>
+      <span class="menu-label">My Project</span>
+    </div>
+    <div class="menu-item">
+        <i class="icon-menu3"></i>
+      <span class="menu-label">User</span>
+    </div>
+    <div class="menu-item">
+        <i class="icon-menu4"></i>
+      <span class="menu-label">Document</span>
+    </div>
+    <div class="menu-item">
+        <i class="icon-menu5"></i>
+      <span class="menu-label">Help</span>
+    </div>
+    <div class="user-info-wrap">
+      <div>
+        <i class="icon-user-info"></i>
+      </div>
+      <div class="user-info">
+        <p>Username</p>
+        <p>user@samsung.com</p>
+      </div>
+    </div>  
+  </div>
+ 
+  <div id="main">
+    <div id="topbar">
+      <button id="toggleSidebar">
+        <i class="icon-folding-menu"></i>
+      </button>
+      <span>Chat</span>
+      <div class="topbar-right">
+            <i class="icon-topbar1"></i>
+            <i class="icon-topbar2"></i>
+            <button class="extra-button"><i class="icon-newchat"></i>New Chat</button>
+            <button class="logout-button"><i class="icon-logout"></i>logout</button>
+      </div>
+    </div>
+
+    <div id="chat-container"></div>
+
+    <div class="input-area">
+      <div class="input-wrapper">
+        <input type="text" id="input" placeholder="'안녕하세요'를 입력해보세요" />
+        <button id="send">
+            <i class="icon-send"></i>
+        </button>
+      </div>
+      <p class="txt">please double check the response.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
